@@ -27,15 +27,28 @@ a:hover {
 html,
 body {
   height: 100%;
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.7), 
-      rgba(0, 0, 0, 0.7)
-    ), url(/assets/img/background-cover.jpg);
+  background: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.4)
+      ),
+      url(/assets/img/background-cover-light.jpg),
+      no-repeat,
+      center,
+      center,
+      fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+  background-size: 100% 100%;
 }
+
 body {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  overflow: hidden;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
